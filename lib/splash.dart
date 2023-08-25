@@ -42,23 +42,24 @@ class Start extends StatelessWidget {
           height: 35,
           width: 180,
           child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                  backgroundColor: const Color(0xff393939)),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Listwidget()),
-                );
-              },
-              child: const Text(
-                'Let\'s get started',
-                style: TextStyle(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 12,
-                    color: Colors.white),
-              )),
+            style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)),
+                backgroundColor: const Color(0xff393939)),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Listwidget()),
+              );
+            },
+            child: const Text(
+              'Let\'s get started',
+              style: TextStyle(
+                  fontWeight: FontWeight.w300,
+                  fontSize: 12,
+                  color: Colors.white),
+            ),
+          ),
         )
       ]),
     );
